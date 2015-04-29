@@ -1,0 +1,31 @@
+<html>
+<header>
+    <title>The problem of gas stations</title>
+    <style>
+body { background-color: black; }
+div.Main { background-color: white; margin: 2%%; width: 94%%; padding: 1%%; }
+div.Info { background-color: #DDD; padding: 2px 15px 2px 15px; }
+div.Form { background-color: #9DF; padding: 2px 15px 2px 15px; }
+div.Form p { margin: 0px; padding: 10px 0px 0px 0px; }
+div.Form input.Text { width: 200px; border: groove 5px }
+div.Form p.Result { font-weight: bold; color: red; }
+    </style>
+</header>
+<body>
+<div class='Main'>
+    <h1>The problem of gas stations</h1>
+    <div class='Info'><p>
+    %(info)s
+    </p></div>
+    <div class='Form'>
+        <form action='/main' method='post'>
+        <p>Please, input your string array of gas stations:</p>
+        <br />
+        <input class="Text" type='text' name='data' id='data' value='%(data)s' />
+        <input type='submit' value='Check route...' />
+        <p class='Result'>%(result)s</p>
+        </form>
+    </div>
+</div>
+</body>
+</html>
